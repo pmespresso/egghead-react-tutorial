@@ -2,4 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('app'));
+App.propTypes = {
+  txt: React.PropTypes.string
+}
+
+App.defaultProps = {
+  txt: 'default text'
+}
+
+ReactDOM.render(<App/>, document.getElementById('app'));
